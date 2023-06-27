@@ -5,13 +5,13 @@ function Parent() {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <div>
+    <div className="parent">
       <h1>Parent Component</h1>
       <Child setModal={setShowModal} modal={showModal}/>
       {showModal ? (
         <>
           <h3>Modal Content</h3>
-          <p>This is the modal content</p>
+          <p>This is the modal content.</p>
         </>
       ) : (
         ""
